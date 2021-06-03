@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <script>
+        let bodyelement = document.getElementById('body');
+        bodyelement.style.display = "grid";
+        bodyelement.style.gridGap = "0px";
+        bodyelement.style.gridTemplateColumns = "repeat(auto-fill, minmax(50px, 1fr))";
+
+        for(let i=0; i<1000; i++){
+            let element = document.createElement('h1');
+            document.body.appendChild(element);
+            element.style.background = "red";
+            element.style.color = "white";
+            element.style.width = "10px";
+            element.style.height = "10px";
+            element.style.padding = "20px";
+            element.style.border = "solid 2px black"
+            element.style.margin = "0px";
+            // element.style.display = "flex";
+            // element.style.flexDirection = "row";
+        
+        
+
+            element.addEventListener('click',(e) => {
+                //console.log(e.target)
+                if (e.target.style.background == "red"){
+                    e.target.style.background = "green";
+                }
+                else {
+                    e.target.style.background = "red";
+                }
+            });
+
+        }
+
+        
+    </script>
+</body>
+</html>
