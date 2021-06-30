@@ -1,0 +1,31 @@
+body {
+    background-color: midnightblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    width: 30em;
+    height: 10em;
+    margin: auto;
+    margin-top: 10em;
+    padding: 1em;
+    border: black 4px solid;
+    border-radius: 20px;
+    background: aliceblue;
+}
+
+#opgaveblad {
+    font-size: 23px;
+    background: violet;
+    text-align: center;
+    height: 4em;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#antwoordenblad {
+    background: rebeccapurple;
+    color: white;
+
+}
